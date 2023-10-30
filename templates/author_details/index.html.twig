@@ -1,0 +1,10 @@
+{% if author is not empty %}
+<h1>Author Details</h1>
+<p><strong>ID:</strong> {{ author.id }}</p>
+<p><strong>Name:</strong> {{ author.username }}</p>
+<p><strong>Email:</strong> {{ author.email }}</p>
+<p><strong>Nomber Book:</strong> {{ author.nb_books }}</p>
+<p><strong>Picture:</strong> <img src="{{ asset(author.picture) }}" alt="Picture"></p>
+{% else %}
+<h1>data not found</h1>
+{% endif %}
